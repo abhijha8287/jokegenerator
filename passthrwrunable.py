@@ -11,7 +11,7 @@ prompt1 = PromptTemplate(
     input_variables=['topic']
 )
 
-model = ChatOpenAI(model_name="gpt-4", api_key=st.secrets['api_key'], temperature=0)
+model = ChatOpenAI(model_name="gpt-4", api_key=st.secrets['api_key'], temperature=1.4)
 
 parser = StrOutputParser()
 
